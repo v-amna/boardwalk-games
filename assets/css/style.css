@@ -28,6 +28,13 @@ p{
 .sub-heading-color{
     color: var(--highlight-color);
 }
+/*Nav-bar css*/
+#nav-bar{
+    background-color: var(--primary-color);
+}
+#nav-bar .logo{
+    width: 30px;
+}
 /*grid visualization css for testing
 .container,.row{
     border: 2px solid black;
