@@ -28,11 +28,11 @@ p{
 .sub-heading-color{
     color: var(--highlight-color);
 }
-/*grid visualization css for testing*/
+/*grid visualization css for testing
 .container,.row{
     border: 2px solid black;
 }
 .col-12{
     border: 2px solid white;
     background-color: lightgrey;
-}
+}*/
