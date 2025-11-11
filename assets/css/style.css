@@ -21,7 +21,14 @@ h2,
 h3{
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    
+}
+h1,h2{
+    
     text-transform: uppercase;
+}
+h2{
+    margin-bottom: 2rem;
 }
 
 .section{
@@ -46,6 +53,17 @@ p{
 #header.lead{
     font-family: var(--secondary-font);
 }
+/*Serviece section*/
+#serviece .card-footer{
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+
+}
+#serviece .card{
+    margin-bottom: 1.5rem;
+}
+
 /*grid visualization css for testing
 .container,.row{
     border: 2px solid black;
@@ -54,3 +72,30 @@ p{
     border: 2px solid white;
     background-color: lightgrey;
 }*/
+/*media query for servieces card height setting*/
+@media screen and (min-width:768px) {
+    #serviece .card-body{
+        min-height: 191px;
+    }
+    
+}
+/*media query for large screen,*/
+
+@media screen and (min-width:992px) {
+    #serviece .card-body{
+        min-height: auto;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    #serviece .card-body{
+        min-height: 220;
+    }
+    
+}
+@media screen and (min-width:1400px) {
+    #serviece .card-body{
+        min-height: 195;
+    }
+    
+}
