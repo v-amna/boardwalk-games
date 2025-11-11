@@ -72,6 +72,13 @@ p{
     border: 2px solid white;
     background-color: lightgrey;
 }*/
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 /*media query for servieces card height setting*/
 @media screen and (min-width:768px) {
     #serviece .card-body{
