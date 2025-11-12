@@ -106,6 +106,10 @@ p{
     color: var(--secondary-color);
 }
 
+/*opening time table*/
+#contact .table-dark *{
+    background-color: transparent;
+}
 /*media query for servieces card height setting*/
 @media screen and (min-width:768px) {
     #serviece .card-body{
