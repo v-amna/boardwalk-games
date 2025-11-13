@@ -35,6 +35,7 @@ h2{
 .section{
     margin-top: 2rem;
     margin-bottom: 2rem;
+   
 }
 /*Buttons*/
 .custom-button-filled{
@@ -93,7 +94,21 @@ p{
     border: 2px solid white;
     background-color: lightgrey;
 }*/
+/*events*/
 
+.custom-badge {
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  font-size: medium;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+}
 
 /* Game library cards */
 
@@ -127,6 +142,7 @@ p{
 #contact .social-links i:hover{
     color: var(--secondary-color);
 }
+
 
 /*opening time table*/
 #contact .table-dark *{
