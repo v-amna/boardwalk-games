@@ -43,8 +43,29 @@
   </head>
   <!--classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of page-->
   <body class="d-flex flex-column min-vh-100">
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+<script>
+    document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+            link.addEventListener("click", function (e) {
+                let section = document.querySelector(e.target.getAttribute("href"));
+                if (section) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                    window.scroll({
+                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                        behavior: "smooth",
+                    });
+                    document
+                        .querySelector(".navbar-collapse")
+                        .classList.remove("show"); // Collapse navbar
+                }
+            });
+        });
+</script>
     <!--Navigation-->
-    <nav id="nav-bar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="nav-bar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
