@@ -35,8 +35,7 @@ h2{
 
 .section{
     padding-top: 4rem;
-   /* margin-top: 2rem;
-    margin-bottom: 2rem;*/
+  
    
 }
 /*Buttons*/
@@ -64,10 +63,7 @@ h2{
     margin-top: 0%;
     
 }
-/*
-p{
-    border: 2px solid var(--primary-color);
-}*/
+
 .sub-heading-color{
     color: var(--highlight-color);
 }
@@ -93,15 +89,7 @@ p{
     margin-bottom: 1.5rem;
 }
 
-/*grid visualization css for testing
-.container,.row{
-    border: 2px solid black;
-}
-.col-12{
-    border: 2px solid white;
-    background-color: lightgrey;
-}*/
-/*events*/
+
 
 .custom-badge {
   background-color: var(--highlight-color);
@@ -172,13 +160,13 @@ p{
 }
 @media screen and (min-width:1200px) {
     #serviece .card-body{
-        min-height: 220;
+        min-height: 220px;
     }
     
 }
 @media screen and (min-width:1400px) {
     #serviece .card-body{
-        min-height: 195;
+        min-height: 195px;
     }
     
 }
